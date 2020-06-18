@@ -4,104 +4,114 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F7F9FA"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="288dp"
         android:layout_height="61dp"
-        android:layout_marginTop="120dp"
-        android:text="Add a new Employee"
+        android:layout_marginTop="80dp"
+        android:background="#FFFDFD"
+        android:text="Add a New Employee"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.004" />
 
-    <EditText
-        android:id="@+id/EditEmpName"
-        android:layout_width="223dp"
-        android:layout_height="49dp"
-        android:ems="10"
-        android:hint="Enter Employee Name"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/SelDepartment"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.382"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.812" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A5C5BC"
+        android:layout_marginTop="160dp"
+        tools:layout_editor_absoluteY="160dp">
 
-    <Spinner
-        android:id="@+id/SelDepartment"
-        android:layout_width="226dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginLeft="72dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:entries="@array/department"
-        app:layout_constraintVertical_bias="0.514" />
+        <EditText
+            android:id="@+id/EditEmpName"
+            android:layout_width="223dp"
+            android:layout_height="49dp"
+            android:ems="10"
+            android:hint="Enter Employee Name"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/SelDepartment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.345"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.541" />
 
-    <EditText
-        android:id="@+id/EditSalary"
-        android:layout_width="229dp"
-        android:layout_height="45dp"
-        android:ems="10"
-        android:hint="Enter the Salary"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.395"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.603" />
+        <Spinner
+            android:id="@+id/SelDepartment"
+            android:layout_width="226dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginLeft="72dp"
+            android:entries="@array/department"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.438" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="192dp"
-        android:layout_height="21dp"
-        android:text="Select the Department"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.337"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.451" />
+        <EditText
+            android:id="@+id/EditSalary"
+            android:layout_width="229dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:hint="Enter the Salary"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.379"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.572" />
 
-    <androidx.constraintlayout.widget.Group
-        android:id="@+id/group"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="192dp"
+            android:layout_height="21dp"
+            android:text="Select the Department"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.296"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.336" />
 
-    <Button
-        android:id="@+id/AddButton"
-        android:layout_width="246dp"
-        android:layout_height="44dp"
-        android:text="Add Emplyee"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.737" />
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-    <Button
-        android:id="@+id/ViewButton"
-        android:layout_width="246dp"
-        android:layout_height="44dp"
-        android:text="View all Emplyees"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.846" />
+        <Button
+            android:id="@+id/AddButton"
+            android:layout_width="246dp"
+            android:layout_height="44dp"
+            android:text="Add Emplyee"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.448"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.737" />
+
+        <Button
+            android:id="@+id/ViewButton"
+            android:layout_width="246dp"
+            android:layout_height="44dp"
+            android:text="View all Emplyees"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.448"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.846" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
